@@ -80,7 +80,7 @@ async function getData() {
             <div class="child image">
                 <img class="imageofapi" src="${meal.strMealThumb}" alt=""><h3>${meal.strMeal}</h3><hr style="color :#272020"> <h5 style="font-weight: lighter">Cusine - ${meal.strArea}</h5>
                 <div class=" ingre"  ><button onclick="changecss()" id="showingredient">ShowIngredient</button>
-                <div class="showinstructonclick" style="height:fit-content; width:150%; padding:20px 20px;">${ingredients}</div>
+                <div class="showinstructonclick" style="height:fit-content; width:99%; padding:20px 20px;">${ingredients}</div>
                 </div>
             </div>
             <div class="child insrt"><h5 style="font-weight:light">Recipe</h5> <p>${meal.strInstructions+'Func2'}</p></div>
