@@ -1,24 +1,76 @@
-.navigation{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100vh;
-    padding: 30px;
-}
-#head{
-    border: 2px solid black;
-    width: 100vw;
-    padding: 0px;
-
-}
-.navelement ul li{
-    padding: 10vw;
+* {
     margin: 0px;
-}
-#head ul{
-    width: 100px;
     padding: 0px;
+    box-sizing: border-box;
 }
-#searchbar{
-    width: ;
+
+body {
+    background-color: aliceblue;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    grid-template-rows: auto;
+    background-color: rgb(213, 214, 222);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.navelement {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#textbar {
+    height: 40%;
+    width: 80%; /* Adjusted width for mobile */
+    background-color: aliceblue;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.head-title {
+    text-align: center;
+    padding-top: 50px; /* Reduced padding for mobile */
+    font-size: 3rem; /* Adjusted font size for mobile */
+}
+
+/* Add media query for screens with a width less than 1240 pixels */
+@media only screen and (max-width: 1240px) {
+    .contents {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        grid-template-rows: auto;
+        padding: 50px 20px; /* Adjusted padding for mobile */
+    }
+
+    .data,
+    .images {
+        padding: 20px; /* Adjusted padding for mobile */
+    }
+
+    .section {
+        padding: 100px 20px; /* Adjusted padding for mobile */
+    }
+
+    .sec-item {
+        width: 100%; /* Full width for mobile */
+        padding: 17px 20px; /* Adjusted padding for mobile */
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .insrt {
+        height: 100%; /* Full height for mobile */
+    }
+
+    .sub-heading {
+        top: 10vh; /* Adjusted position for mobile */
+        margin-left: 20px; /* Adjusted margin for mobile */
+    }
 }
