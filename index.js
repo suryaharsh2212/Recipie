@@ -48,6 +48,7 @@ async function display() {
             
     } catch (error) {
         console.error('Error fetching data:', error);
+        alert("Searched item is not avaiable try another item....!!!")
     }
     console.log(userinput)
 }
