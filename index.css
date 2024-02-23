@@ -6,6 +6,8 @@
 
 body {
     background-color: aliceblue;
+    padding: 0px;
+    margin: 0px;
 }
 /* advertiser */
 
@@ -238,10 +240,23 @@ h1{
     background-color: rgb(228, 215, 215);
     border-radius: 5px;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .showinstructonclick{
     opacity: 0;
 }
 #colour{
     background-color: #2044cd;
+}
+#title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: rgb(244, 237, 239);  */
+    
+}
+#navbar2{
+    background-color: #f3eaea;
+    
 }

@@ -8,7 +8,7 @@ function changecss() {
     }
 
 async function display() {
-    let userinput=document.getElementById('textbar').value;
+    let userinput=document.getElementById('Search').value;
     try {
         const response = await fetch(url+userinput);
         const data = await response.json();
