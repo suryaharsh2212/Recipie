@@ -75,7 +75,7 @@ li a {
 
 li a:hover {
     /* background-color: rgb(254, 254, 254); */
-    ;
+    
     color: black;
     text-decoration: underline;
 }
